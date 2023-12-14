@@ -1,4 +1,4 @@
-#~/movie-service/app/api/models.py
+#~/python-microservices/movie-service/app/api/models.py
 
 from pydantic import BaseModel
 from typing import List, Optional
@@ -7,7 +7,7 @@ class MovieIn(BaseModel):
     name: str
     plot: str
     genres: List[str]
-    casts: List[str]
+    casts_id: List[int]
 
 
 class MovieOut(MovieIn):
@@ -18,4 +18,4 @@ class MovieUpdate(MovieIn):
     name: Optional[str] = None
     plot: Optional[str] = None
     genres: Optional[List[str]] = None
-    casts: Optional[List[str]] = None
+    casts_id: Optional[List[int]] = None
