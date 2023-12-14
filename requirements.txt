@@ -1,0 +1,8 @@
+asyncpg==0.29.0
+databases==0.8.0
+fastapi==0.105.0
+SQLAlchemy==1.4.50
+uvicorn==0.24.0.post1
+httpx==0.25.2
+virtualenv==20.25.0
+psycopg2==2-2.9.9
